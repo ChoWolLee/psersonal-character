@@ -1,0 +1,178 @@
+<!--GPT를 이용해 만들어진 간단한 개인소개 웹사이트입니다.-->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 소개</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .intro {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: left;
+            margin-left: 100px;
+            padding-bottom: 20px;
+            padding-top: 8px;
+        }
+
+        .mbti, .strengths {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+
+        }
+
+        .mbti h2, .strengths h2 {
+            margin-top: 0;
+            color: #666;
+            padding: 5px;
+        }
+
+        .strengths ul {
+            list-style: none;
+            padding: 0;
+        }
+        .mbti p {
+            text-align: left;
+            margin-left: 100px;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        .mbti_icon img{
+            max-width: 40%;
+            padding: 20px;
+        }
+
+
+        .strengths li {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 5px 0;
+            padding: 10px;
+        }
+
+        .brand {
+            max-width: 70%;
+        }
+
+        .mascot {
+            margin: 20px 0;
+        }
+
+        .mascot img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>뜨차의 웹 페이지에 오신 것을 환영합니다.</h1>
+    <div class="intro">
+        <p>제 성격과 강점을 나누는 이 공간입니다.<br>
+            함께 저의 이야기를 탐험해 보세요.</p>
+    </div>
+
+    <div class="mbti">
+        <h2>MBTI: ENFP</h2>
+        <p>저는 ENFP 유형으로, 열정적이고 사교적인 성격입니다.<br>
+            새로운 아이디어와 창의적인 활동을 즐깁니다. 사람들과의 소통에서<br>
+            에너지를 얻고, 타인의 감정을 잘 이해하며 공감하는 능력이 뛰어납니다.<br>
+            유연하게 변화에 적응하고 직관적으로 문제를 해결합니다.</p>
+    </div>
+
+    <div class="mbti_icon">
+    <img src="./img/엔프피.png" alt="enfp">
+    <img src="./img/엔프피_2.jpg" alt="enfp">
+    </div>
+
+
+    <img src="./img/enfp_결과.png" alt="enfp">
+
+
+
+
+    <div class="strengths">
+        <h2>갤럽 강점검사 Top 5</h2>
+        <ul>
+            <li>1. <strong>적응(Adaptability) 테마</strong><br>
+                당신은 일의 자연스러운 흐름에 따르는 것을 선호합니다. 당신은 일이 생기는 대로<br>
+                유동적으로 대처하며 미래를 하루 하루씩 발견해 나아가는 “현재”에 충실한 사람입니다. </li>
+            <li>2. <strong>공감(Empathy) 테마</strong><br>
+                당신은 다른 사람들의 인생이나 상황에 자신을 이입함으로써 그들의 감정을 느낄 수 있습니다. </li>
+            <li>3. <strong>발상(Ideation) 테마</strong><br>
+                당신은 아이디어에 매료되어 있습니다. 당신은 언뜻 보기에는<br>
+                전혀 상관이 없어 보이는 현상들의 연관성을 찾아낼 수 있습니다. </li>
+            <li>4. <strong>사교성(Woo) 테마</strong><br>
+                당신은 새로운 사람들을 만나 자기 편으로 만드는 일을 매우 즐깁니다.<br>
+                당신은 어색한 분위기를 깨고 다른 사람과 인맥을 쌓는 데에서 만족감을 얻습니다. </li>
+            <li>5. <strong>커뮤니케이션(Communication) 테마</strong><br>
+                당신은 대개 자신의 생각을 쉽게 말로 표현합니다. 당신은 대화도 잘하고 발표에도 능합니다.</li>
+        </ul>
+    </div>
+
+    <img src="./img/갤럽-강점.png" alt="최상위 강점 5개">
+    <img src="./img/클리프톤.png" alt="갤럽 이미지" class="brand">
+
+    <div class="mascot">
+        <h2>저의 귀여운 마스코트</h2>
+        <img src="./img/뜨차1.jpg" alt="Mascot1">
+        <img src="./img/뜨차2.jpg" alt="Mascot2">
+    </div>
+</div>
+</body>
+</html>
+```
+
+
+<!--1. **HTML 구조**:
+- `container` 클래스는 페이지의 중앙에 배치된 콘텐츠 영역입니다.
+- `intro` 섹션은 개인 소개를 담고 있습니다.
+- `mbti`와 `strengths` 섹션은 각각 MBTI 유형과 갤럽 강점검사 결과를 보여줍니다.
+- `mascot` 섹션에는 귀여운 3D 캐릭터 이미지가 포함되어 있습니다. (이미지는 예시입니다. 실제 마스코트 이미지를 넣으시면 좋습니다.)
+
+2. **CSS 스타일**:
+- 연그레이색 배경과 흑백 색상 조합을 사용하여 깔끔하고 눈이 편안한 디자인을 구현했습니다.
+- 반응형 디자인을 위해 작은 화면에서는 여백을 조절합니다.
+
+이 코드를 `index.html` 파일로 저장하시고 웹 브라우저에서 열어보시면 개인 웹 페이지를 확인할 수 있습니다. 필요에 따라 디자인을 수정하거나 3D 캐릭터 이미지를 교체하시면 좋습니다!-->
